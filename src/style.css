@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #F5F7FB;
+  width: 100%;
+  height: 100%;
+  background-image:url(./images/intro-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.start--game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.quizzical--box {
+  max-width: 75vw;
+  margin: auto;
+}
+
+.quizzical {
+  font-size: 31px;
+  color: #293264;
+  margin-bottom: 0px
+}
+
+.quizzical--description {
+  margin-top: 10px;
+  color: #293264;
+}
+
+.quizzical--btn {
+  border: none;
+  border-radius: 8px;
+  background-color: #4D5B9E;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-box {
+  max-width: 75vw;
+  align-self: center;
+  margin-top: 20px;
+  
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.question--setup {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #293264;
+}
+
+.question--answer_container {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #DBDEF0;
+}
+
+.question--answer {
+  font-family: 'Karla', sans-serif;
+  border: 1px solid #4D5B9E;
+  border-radius: 15px;
+  padding: 7px 20px;
+  color: #293264;
+  background-color: transparent;
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+
+.question--answer_checked {
+  background-color: #D6DBF5;
+}
+
+.red {
+  background-color: #F8BCBC;
+ 
+}
+
+.question--answer:hover {
+  background-color: #D6DBF5;
+}
+
+.question--answer:focus {
+  outline: none;
+}
+
+.question--answer:not(:last-child) {
+  margin-right: 12px;
+}
+
+.check--answers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.check--answers_btn {
+  border: none;
+  border-radius: 8px;
+  background-color: #4D5B9E;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  padding: 15px 20px;
+  cursor: pointer;
+  
+}
+
+.check--answers_btn:focus {
+  outline: none;
+}
+
+.score {
+  color: #293264;
+  margin-right: 20px; 
+}
