@@ -23,7 +23,7 @@ export default function App() {
     }, [])
     
     function fetchQuestions() {
-        fetch('https://opentdb.com/api.php?amount=5&encode=base64')
+        fetch('https://opentdb.com/api.php?amount=10&encode=base64')
             .then(res => res.json())
             .then(data => {
                 setQuestions(data.results.map((item) => ({
@@ -145,7 +145,7 @@ export default function App() {
                   {questionElements}
               </div>
             <div className='check--answers'>
-                  {mark && <h3 className='score'>You scored {score}/5 correct answers</h3>}
+                  {mark && <h3 className='score'>You scored {score}/10 correct answers</h3>}
                   <button className='check--answers_btn' onClick={checkAnswers}>{!mark ? 'Check Answers' : 'Play Again'}</button>
             </div>
             </div>
